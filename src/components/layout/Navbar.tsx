@@ -39,25 +39,34 @@ export const Navbar: React.FC = () => {
             </Link>
           </div>
 
+          {/* Quick Actions */}
+          <div className="hidden md:flex items-center space-x-3">
+            <Link href="/projects/new">
+              <Button variant="secondary" size="sm">
+                發布案件
+              </Button>
+            </Link>
+            <Link href="/freelancers">
+              <Button variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-[#20263e]">
+                找工程師
+              </Button>
+            </Link>
+          </div>
+
           {/* Auth Buttons */}
           <div className="flex items-center space-x-4">
             {isLoggedIn ? (
               <>
                 <Link href="/dashboard">
-                  <Button variant="outline" size="sm">
+                  <Button variant="outline" size="sm" className="border-white text-white hover:bg-white hover:text-[#20263e]">
                     控制台
-                  </Button>
-                </Link>
-                <Link href="/projects/new">
-                  <Button variant="secondary" size="sm">
-                    發布案件
                   </Button>
                 </Link>
               </>
             ) : (
               <>
                 <Link href="/login">
-                  <Button variant="outline" size="sm">
+                  <Button variant="secondary" size="sm">
                     登入
                   </Button>
                 </Link>

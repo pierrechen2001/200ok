@@ -124,13 +124,13 @@ export default function HomePage() {
               <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide px-2 scroll-smooth">
                 {[...Array(5)].map((_, i) => (
                   <div key={i} className="animate-pulse flex-shrink-0 w-80">
-                    <Card className="p-6">
-                      <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
-                      <div className="h-3 bg-gray-200 rounded w-1/2 mb-4"></div>
-                      <div className="h-6 bg-gray-200 rounded w-1/4"></div>
-                    </Card>
-                  </div>
-                ))}
+                  <Card className="p-6">
+                    <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
+                    <div className="h-3 bg-gray-200 rounded w-1/2 mb-4"></div>
+                    <div className="h-6 bg-gray-200 rounded w-1/4"></div>
+                  </Card>
+                </div>
+              ))}
               </div>
               {/* 左右滑動提示 */}
               <div className="absolute left-0 top-0 bottom-4 w-8 bg-gradient-to-r from-[#e6dfcf] to-transparent pointer-events-none"></div>
@@ -214,17 +214,17 @@ export default function HomePage() {
               <div className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide px-2 scroll-smooth">
                 {[...Array(5)].map((_, i) => (
                   <div key={i} className="animate-pulse flex-shrink-0 w-80">
-                    <Card className="p-6">
-                      <div className="flex items-center space-x-4">
-                        <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
-                        <div className="flex-1">
-                          <div className="h-4 bg-gray-200 rounded w-1/2 mb-2"></div>
-                          <div className="h-3 bg-gray-200 rounded w-3/4"></div>
-                        </div>
+                  <Card className="p-6">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 bg-gray-200 rounded-full"></div>
+                      <div className="flex-1">
+                        <div className="h-4 bg-gray-200 rounded w-1/2 mb-2"></div>
+                        <div className="h-3 bg-gray-200 rounded w-3/4"></div>
                       </div>
-                    </Card>
-                  </div>
-                ))}
+                    </div>
+                  </Card>
+                </div>
+              ))}
               </div>
               {/* 左右滑動提示 */}
               <div className="absolute left-0 top-0 bottom-4 w-8 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
@@ -403,13 +403,13 @@ export default function HomePage() {
             立即加入 200 OK，與優秀的接案工程師合作，實現您的軟體夢想。
           </p>
           <div className="flex justify-center gap-3">
-            <Link href="/register">
+            <Link href="/projects/new">
               <Button variant="secondary" size="sm">
-                免費註冊
+                發布案件
               </Button>
             </Link>
             <Link href="/projects">
-              <Button variant="outline" size="sm">
+              <Button variant="primary" size="sm" className="bg-white text-[#313b62] hover:bg-gray-100">
                 查看案件
               </Button>
             </Link>
